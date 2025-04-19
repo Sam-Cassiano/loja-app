@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+.botao {
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Botão padrão */
+.botao-padrao {
+  background-color: #2563eb; /* azul-600 */
+  color: white;
+}
+
+.botao-padrao:hover {
+  background-color: #1d4ed8; /* azul-700 */
+}
+
+/* Botão secundário */
+.botao-secundario {
+  background-color: #6b7280; /* gray-600 */
+  color: white;
+}
+
+.botao-secundario:hover {
+  background-color: #4b5563; /* gray-700 */
+}
+
+/* Botão de alerta */
+.botao-alerta {
+  background-color: #dc2626; /* red-600 */
+  color: white;
+}
+
+.botao-alerta:hover {
+  background-color: #b91c1c; /* red-700 */
+}

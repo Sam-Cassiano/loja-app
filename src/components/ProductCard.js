@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Botao from "./Botao"; // ajuste o caminho se necessário
+
 
 export default function ProductCard({ nome, descricao, preco, imagem }) {
   const [mostrarInfo, setMostrarInfo] = useState(false);
@@ -21,14 +23,11 @@ export default function ProductCard({ nome, descricao, preco, imagem }) {
         <p className="text-gray-600 mb-2 text-sm">{descricao}</p>
         <p className="font-bold text-base text-green-600">R$ {preco}</p>
 
-        <div className="flex flex-col gap-2 mt-4">
-          <button
-            onClick={toggleInfo}
-            className="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900 transition"
-          >
-            {mostrarInfo ? "Esconder informações" : "Mais informações"}
-          </button>
-        </div>
+          <div className="flex flex-col gap-2 mt-4">
+          <Botao onClick={toggleInfo} tipo="padrao">
+  {mostrarInfo ? "Esconder informações" : "Mais informações"}
+</Botao>
+          </div>
 
         {mostrarInfo && (
           <div className="mt-4 bg-white border border-gray-300 p-3 rounded shadow-inner text-sm text-gray-700 transition-all">
