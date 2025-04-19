@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 const produtos = [
   {
-    nome: "Camiseta Branca",
+    nome: "Camiseta Preta",
     descricao: "Camiseta 100% algodão, confortável e estilosa.",
     preco: "49.90",
     imagem: "/camiseta.jpg",
